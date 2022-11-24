@@ -1,0 +1,104 @@
+<html>
+<head>
+<title> Business Game </title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="fabric.js" ></script>
+
+
+<style>
+    body{
+        background-position: center;
+        background-size: cover;
+    }
+    #myCanvas
+    {
+        margin-top: 30px;
+        border-width:10px;
+        background-color: white; 
+        border-style:ridge;
+        background-image: url("Bisinuss_game.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+    color: red;
+    }
+
+    #roll{
+    background-color: lime ;
+    color: rgb(2, 0, 121);
+    width: 250px;
+    height: 100px;
+    font-size: 30px;
+
+    }
+
+    .dice{
+    font-size: 20px;
+    color: black;
+    }
+
+    #Note{
+    color: red;
+    font-size: 20px;
+    }
+
+    .te{
+    color: rgb(0, 0, 255);
+    font-size: 16px;
+    }
+    
+    #buy{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    background-color: black;
+    color: red;
+    }
+    #chance{
+    position: sticky;
+    background-color: black;
+    color: red;
+    font-size: 20;
+    }
+
+
+
+    </style>
+
+</head>
+<body onload="add()">
+<center>
+<h1><b> Business Game </b></h1>
+    <h3>Best expiriance in Computer or laptop device</h3>
+    
+<canvas id="myCanvas" height="800" width="800"></canvas>
+<br><br>
+
+<span><h1 class="dice" >You Got -</h1> <h1 class="dice" id="number"></h1></span>
+
+<br><br>
+
+<button id="roll" onclick="roll()">
+    Roll!
+ </button>
+ <br><br>
+ <button id="buy" onclick="Buy_city()"> <b>Buy the city</b></button>
+ <h1 class="te"> <b id="Note">Note :</b> If Number 0 and Number 1 Come on Dice Roll the Dice Again </h1>
+ <br><br>
+ <h2 class="t">Places of Citys</h2>
+ <br><br>
+ <h1 class="te">1st. The Blue Citys</h1>
+ <h1 class="te">2nd. The Purpal (Voilet) Citys</h1>
+ <h1 class="te">3rd. The Pink Citys</h1>
+ <h1 class="te">4th. The Green Citys</h1>
+ <h1 class="te">5th. The White Citys</h1>
+ <div id="chance">Chance - red</div>
+ <br><br><br><br><br><br><br><br><br><br>
+</center>
+<script src="main.js" ></script>
+</body>
+</html>
